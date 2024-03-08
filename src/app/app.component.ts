@@ -10,6 +10,13 @@ export class AppComponent implements OnInit, OnDestroy {
 
   title = 'My first angular project';
 
+  getMin(a:any,b:any){
+    if(a<b){
+      return 'The smaller value is ' + a;
+    }
+    return 'The smaller value is ' + b;
+  }
+
   ngOnInit(): void {
       this.intervalSub = setInterval(() => {
         console.log("Hello from ngOnInIt!");
